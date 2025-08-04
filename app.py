@@ -10,7 +10,7 @@ st.markdown("Preencha os dados do cliente para obter o score estimado.")
 def mock_score_prediction(data):
     if data["Annual_Income"] > 80000 and data["Monthly_Inhand_Salary"] > 7000:
         return {"credit_score": "900", "risco": "Muito Baixo"}
-    elif data["annual_income"] > 40000:
+    elif data["Annual_Income"] > 40000:
         return {"credit_score": "700", "risco": "Baixo"}
     else:
         return {"credit_score": "500", "risco": "Moderado"}
